@@ -20,13 +20,13 @@ if [ "$go" == 'n' ];then
 fi
 
 #修改强制登录开始
-#sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
-#rm -rf /www/server/panel/data/bind.pl
+sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
+rm -rf /www/server/panel/data/bind.pl
 #修改强制登录结束
-#echo -e "修改强制登陆中..."
-#sleep 2
-#echo -e "修改强制登陆结束."
-#sleep 2
+echo -e "修改强制登陆中..."
+sleep 2
+echo -e "修改强制登陆结束."
+sleep 2
 echo -e "插件商城开心开始..."
 #判断plugin.json文件是否存在,存在删除之后再下载,不存在直接下载
 plugin_file="/www/server/panel/data/plugin.json"
