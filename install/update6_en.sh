@@ -38,7 +38,7 @@ fi
 
 download_Url=$NODE_URL
 setup_path=/www
-version=$(curl -Ss --connect-timeout 5 -m 2 https://brandnew.aapanel.com/api/panel/getLatestOfficialVersion)
+version=$(curl -Ss --connect-timeout 5 -m 2 https://raw.githubusercontent.com/jianping0754/btpanel-v7.7.0/main/api/panel/get_version)
 if [ "$version" = '' ];then
 	version='6.8.16'
 fi
